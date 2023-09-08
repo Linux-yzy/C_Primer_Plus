@@ -20,10 +20,8 @@ struct sdb_interconnect {
         uint32_t  field4: 31;
     }n;
 
-	uint16_t		sdb_records;	
+	uint16_t  sdb_records;	
 }test;
-
-
 
 int main(int argc, char **argv)
 {
@@ -31,7 +29,7 @@ int main(int argc, char **argv)
     printf("addr:sdb_version = %p\n", &test.sdb_version);
     printf("addr:test.m = %p,sizeof:test.m = %d\n", &test.m, sizeof(test.m));
     printf("addr:test.n = %p,sizeof:test.n = %d\n", &test.n, sizeof(test.n));
-    printf("addr:adb_records = %p\n", &test.sdb_records);
+    printf("addr:sdb_records = %p\n", &test.sdb_records);
 
     return 0;
 }
